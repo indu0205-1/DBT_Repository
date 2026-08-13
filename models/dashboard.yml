@@ -1,0 +1,13 @@
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://5b9551ad.us1a.app.preset.io/superset/dashboard/p/40ErQXPQx2a/
+    description: Executive Dashboard about Airbnb listings and hosts
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+    owner:
+      name: Indumathi Gopalan
+      email: indu0205@gmail.com

@@ -1,9 +1,9 @@
 {{ config(
-    materialized='view'
+    materialized='table'
     )
 }}
 
-with src_hosts as(
+with src_hosts as (
     select * from {{ ref('src_hosts') }}
 )
 select 
