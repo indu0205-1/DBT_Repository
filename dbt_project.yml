@@ -50,8 +50,13 @@ models:
     +materialized: view
     dim:
       +materialized: table
-    # src:
-    #   +materialized: ephemeral
+    src:
+      +materialized: ephemeral
+    fct:
+      +tags: ['fact']
 data_tests: 
   +store_failures: true
   +schema: __test_failures
+
+vars:
+  user_name: "Indu"
